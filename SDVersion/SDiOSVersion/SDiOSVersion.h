@@ -75,6 +75,7 @@ typedef NS_ENUM(NSInteger, DeviceSize){
 + (NSString *)deviceSizeName:(DeviceSize)deviceSize;
 + (NSString *)deviceNameString;
 + (BOOL)isZoomed;
++ (BOOL)isIphoneXSeries;
 
 + (BOOL)versionEqualTo:(NSString *)version;
 + (BOOL)versionGreaterThan:(NSString *)version;

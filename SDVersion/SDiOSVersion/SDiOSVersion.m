@@ -244,6 +244,15 @@
     return NO;
 }
 
++ (BOOL)isIphoneXSeries {
+    if ([SDVersion deviceSize] ==Screen5Dot8inch ||
+        [SDVersion deviceSize] ==Screen6Dot1inch ||
+        [SDVersion deviceSize] ==Screen6Dot5inch) {
+        return YES;
+    }
+    return NO;
+}
+
 + (BOOL)versionEqualTo:(NSString *)version
 {
     return ([[[UIDevice currentDevice] systemVersion] compare:version options:NSNumericSearch] == NSOrderedSame);
