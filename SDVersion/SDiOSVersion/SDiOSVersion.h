@@ -82,3 +82,4 @@ typedef NS_ENUM(NSInteger, DeviceSize){
 + (BOOL)versionLessThan:(NSString *)version;
 + (BOOL)versionLessThanOrEqualTo:(NSString *)version;
 
+@end
