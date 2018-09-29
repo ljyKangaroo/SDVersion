@@ -245,9 +245,9 @@
 }
 
 + (BOOL)isIphoneXSeries {
-    if ([SDVersion deviceSize] ==Screen5Dot8inch ||
-        [SDVersion deviceSize] ==Screen6Dot1inch ||
-        [SDVersion deviceSize] ==Screen6Dot5inch) {
+    if ([SDiOSVersion deviceSize] ==Screen5Dot8inch ||
+        [SDiOSVersion deviceSize] ==Screen6Dot1inch ||
+        [SDiOSVersion deviceSize] ==Screen6Dot5inch) {
         return YES;
     }
     return NO;
