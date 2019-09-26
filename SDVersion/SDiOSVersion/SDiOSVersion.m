@@ -52,6 +52,9 @@
                               @"iPhone11,4" : @(iPhoneXSMax),
                               @"iPhone11,6" : @(iPhoneXSMax),
                               @"iPhone11,8" : @(iPhoneXR),
+                              @"iPhone12,1" : @(iPhone11),
+                              @"iPhone12,3" : @(iPhone11Pro),
+                              @"iPhone12,5" : @(iPhone11ProMax),
                               @"i386"       : @(Simulator),
                               @"x86_64"     : @(Simulator),
                               
@@ -141,7 +144,7 @@
     } else if (screenHeight == 812) {
         return Screen5Dot8inch;
     } else if (screenHeight == 896) {
-        if ([SDiOSVersion deviceVersion] == iPhoneXSMax) {
+        if ([SDiOSVersion deviceVersion] == iPhoneXSMax || [SDiOSVersion deviceVersion] == iPhone11ProMax) {
             return Screen6Dot5inch;
         } else {
             return Screen6Dot1inch;
@@ -203,6 +206,9 @@
              @(iPhoneXS)             : @"iPhone XS",
              @(iPhoneXSMax)          : @"iPhone XS Max",
              @(iPhoneXR)             : @"iPhone XR",
+             @(iPhone11)             : @"iPhone 11",
+             @(iPhone11Pro)          : @"iPhone 11 Pro",
+             @(iPhone11ProMax)       : @"iPhone 11 Pro Max",
              
              @(iPad1)                : @"iPad 1",
              @(iPad2)                : @"iPad 2",
